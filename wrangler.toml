@@ -1,0 +1,10 @@
+name = "verifier-prod"
+main = "src/index.ts"
+compatibility_date = "2025-09-24"
+routes = [
+  { pattern = "verify.runseal.io/verify", custom_domain = true },
+  { pattern = "verify.runseal.io/r/*", custom_domain = true },
+  { pattern = "verify.runseal.io/healthz", custom_domain = true }
+]
+[[kv_namespaces]]
+binding = "RS_URLS"
